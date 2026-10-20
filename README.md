@@ -29,4 +29,17 @@ Download the dataset from Kaggle ("Brazilian E-Commerce Public Dataset by Olist"
 and place the CSV files in `data/raw/`.
 
 ## Next steps
-Analytics queries, indexing benchmarks, charts, scheduling with Airflow.
+Index benchmarks, scheduling with Airflow, larger-scale processing with Spark.
+
+## Findings (96,476 delivered orders)
+- **8.11%** of delivered orders arrived after the estimated date.
+- Late orders average **2.57** stars against **4.29** for on-time orders, a gap of 1.72 points.
+- Late rates range from **23.9% in Alagoas** and **19.7% in Maranhão** down to **5.9% in São Paulo** and **2.9% in Rondônia**.
+- Review scores fall as delays grow: **4.29** on time, **3.59** up to 3 days late, **2.10** for 4-7 days late and **1.70** for more than 7 days late.
+- These are associations in the data, not proof that lateness alone causes low scores.
+
+![Late rate by state](reports/late_rate_by_state.png)
+
+![Review score by delay](reports/review_by_delay.png)
+
+Queries are in `sql/analytics.sql`; charts are made by `analysis/charts.py`.
