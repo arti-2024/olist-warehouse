@@ -1,0 +1,12 @@
+DATA QUALITY REPORT
+============================================================
+customers: 99441 rows in, 99441 valid, 0 rejected
+sellers: 3095 rows in, 3095 valid, 0 rejected
+products: 32951 rows in, 32951 valid, 0 rejected
+orders: 99441 rows in, 99441 valid, 0 rejected
+items: 112650 rows in, 112650 valid, 0 rejected
+payments: 103886 rows in, 103886 valid, 0 rejected
+reviews: 99224 rows in, 99224 valid, 0 rejected
+============================================================
+Rules checked: 29
+Rows quarantined: 0
